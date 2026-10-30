@@ -3,13 +3,16 @@
  */
 
 package com.automatas;
-/**
- *
- * @author josue
- */
+
+import javax.swing.SwingUtilities;
+
 public class Automatas {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        SwingUtilities.invokeLater(() -> {
+            DatosProyecto datosProyecto = new DatosProyecto();
+            VentanaPrincipal ventana = new VentanaPrincipal(datosProyecto);
+            ventana.setVisible(true);
+        });
     }
 }
