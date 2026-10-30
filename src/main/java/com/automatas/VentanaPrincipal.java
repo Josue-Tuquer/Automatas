@@ -34,7 +34,7 @@ public class VentanaPrincipal extends JFrame {
     }
 
     private void configurarVentana() {
-        setTitle("Autómatas y Lenguajes");
+        setTitle("Autómatas y Lenguajes Formales");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(940, 640);
         setMinimumSize(new Dimension(760, 560));
@@ -48,14 +48,14 @@ public class VentanaPrincipal extends JFrame {
 
         JPanel encabezado = new JPanel(new BorderLayout(0, 8));
         encabezado.setOpaque(false);
-        JLabel titulo = new JLabel("AUTÓMATAS Y LENGUAJES");
+        JLabel titulo = new JLabel("PROYECTO FINAL AUTÓMATAS");
         titulo.setForeground(AZUL_OSCURO);
         titulo.setFont(new Font("SansSerif", Font.BOLD, 27));
-        JLabel subtitulo = new JLabel("Crea gramáticas y AFD, y prueba cadenas de forma interactiva.");
-        subtitulo.setForeground(new Color(90, 103, 122));
-        subtitulo.setFont(new Font("SansSerif", Font.PLAIN, 15));
+        //JLabel subtitulo = new JLabel("Crea gramáticas y AFD, y prueba cadenas de forma interactiva.");
+        //subtitulo.setForeground(new Color(90, 103, 122));
+        //subtitulo.setFont(new Font("SansSerif", Font.PLAIN, 15));
         encabezado.add(titulo, BorderLayout.NORTH);
-        encabezado.add(subtitulo, BorderLayout.CENTER);
+        //encabezado.add(subtitulo, BorderLayout.CENTER);
 
         JPanel opciones = new JPanel(new GridLayout(2, 3, 14, 14));
         opciones.setOpaque(false);
@@ -72,13 +72,13 @@ public class VentanaPrincipal extends JFrame {
         opciones.add(crearBoton("06", "SALIR / CERRAR PROGRAMA", "Cierra la aplicación.",
                 e -> confirmarSalida()));
 
-        JLabel pie = new JLabel("Seleccione una opción para continuar");
-        pie.setForeground(new Color(112, 124, 141));
-        pie.setFont(new Font("SansSerif", Font.PLAIN, 13));
+        //JLabel pie = new JLabel("Seleccione una opción para continuar");
+        //pie.setForeground(new Color(112, 124, 141));
+        //pie.setFont(new Font("SansSerif", Font.PLAIN, 13));
 
         principal.add(encabezado, BorderLayout.NORTH);
         principal.add(opciones, BorderLayout.CENTER);
-        principal.add(pie, BorderLayout.SOUTH);
+        //principal.add(pie, BorderLayout.SOUTH);
         setContentPane(principal);
     }
 
